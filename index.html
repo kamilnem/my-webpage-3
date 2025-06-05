@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="pl"> {/* Changed to Polish as primary audience is in Poland */}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Poland - Konsulting Agile | Talenty Agile | Optymalizacja Procesów</title> {/* Polish title */}
-    <meta name="description" content="Agile Poland: Eksperci transformacji Agile z Warszawy. Dostarczamy Talenty Agile (Scrum Masterów, Agile Coachów), konsulting Agile oraz interaktywne warsztaty optymalizujące Twoją organizację."> {/* Polish description */}
-    <meta name="keywords" content="konsulting agile, talenty agile, scrum master, agile coach, transformacja agile, warsztaty agile, optymalizacja procesów, agile poland, warszawa"> {/* Polish keywords */}
+    <title>Agile Poland - Agile Consulting | Agile Talents | Process Optimization</title>
+    <meta name="description" content="Agile Poland: Warsaw-based experts in Agile transformation. We provide Agile Talents (Scrum Masters, Agile Coaches), Agile Consulting, and interactive workshops to optimize your organization.">
+    <meta name="keywords" content="agile consulting, agile talents, scrum masters, agile coaches, agile transformation, agile workshops, process optimization, agile poland, warsaw">
     <meta name="author" content="Agile Poland">
     <link rel="canonical" href="https://agilepoland.pl/">
 
-    <meta property="og:title" content="Agile Poland - Wzmacniamy Organizacje dzięki Agile"> {/* Polish OG Title */}
-    <meta property="og:description" content="Odkryj, jak Agile Poland może zwiększyć efektywność Twojej organizacji dzięki ekspertom Agile, konsultingowi i warsztatom. Siedziba w Warszawie."> {/* Polish OG Description */}
+    <meta property="og:title" content="Agile Poland - Empowering Organizations with Agile">
+    <meta property="og:description" content="Discover how Agile Poland can enhance your organization's efficiency with expert Agile Talents, consulting, and workshops. Based in Warsaw.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agilepoland.pl">
-    <meta property="og:image" content="https://agilepoland.pl/agile-poland-logo-nowe.jpg"> {/* UPDATED LOGO PATH */}
-    <meta property="og:site_name" content="Agile Poland">
-    <meta property="og:locale" content="pl_PL"> {/* Added Polish locale */}
+    <meta property="og:image" content="https://agilepoland.pl/agile-poland-logo-nowe.jpg"> <meta property="og:site_name" content="Agile Poland">
+    <meta property="og:locale" content="en_US">
 
 
-    <link rel="icon" href="./agile-poland-logo-nowe.jpg"> {/* UPDATED LOGO PATH - consider a dedicated .ico or small .png */}
-
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./agile-poland-logo-nowe.jpg"> <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --primary-bg: #FFFFFF;
-            --text-dark: #1a1a1a; /* Deep charcoal, almost black */
-            --text-light: #555555; /* Medium gray for secondary text */
-            --accent-color: #0077B5; /* LinkedIn Blue as a potential accent, or keep #c0b283 for gold/beige */
-            /* --accent-color: #c0b283; /* Original subtle gold/beige accent */
-            --border-color: #e0e0e0; /* Light gray for borders */
+            --secondary-bg: #f8f9fa; /* Light grey for alternate sections */
+            --text-dark: #1a1a1a; 
+            --text-light: #555555; 
+            --accent-color: #c0b283; /* Subtle gold/beige accent */
+            --border-color: #e0e0e0; 
             --font-heading: 'Lora', serif;
             --font-body: 'Montserrat', sans-serif;
         }
@@ -41,41 +38,42 @@
             color: var(--text-dark);
             background-color: var(--primary-bg);
             overflow-x: hidden;
-            font-weight: 400; /* Increased base font weight slightly */
+            font-weight: 400; 
         }
         .container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
 
         header {
             position: fixed; width: 100%; top: 0; z-index: 1000;
-            background: rgba(255, 255, 255, 0.97); /* Slightly less transparent */
-            backdrop-filter: blur(10px); /* Increased blur */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Softer shadow */
+            background: rgba(255, 255, 255, 0.97); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 1px 5px rgba(0,0,0,0.07); /* Softer, more subtle shadow */
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            padding: 12px 0; /* Adjusted padding */
+            padding: 15px 0; /* Balanced padding */
         }
         nav { display: flex; justify-content: space-between; align-items: center; }
         .logo {
             display: flex; align-items: center; text-decoration: none;
             color: var(--text-dark); font-family: var(--font-heading);
-            font-weight: 600; font-size: 1.5rem; /* Slightly adjusted size */
+            font-weight: 600; font-size: 1.5rem; 
         }
         .logo-img {
-            height: 40px; /* Adjusted for new logo aspect ratio */
+            height: 38px; /* Fine-tuned height */
             width: auto;
-            margin-right: 10px; /* Slightly reduced margin */
+            margin-right: 10px; 
+            vertical-align: middle; /* Ensure good alignment */
         }
-        .nav-links { display: flex; list-style: none; gap: 2.8rem; } /* Slightly increased gap */
+        .nav-links { display: flex; list-style: none; gap: 2.5rem; } 
         .nav-links a {
-            color: var(--text-light); text-decoration: none; font-weight: 500; /* Slightly bolder */
+            color: var(--text-light); text-decoration: none; font-weight: 500; 
             font-size: 0.9rem; letter-spacing: 0.5px; transition: color 0.3s ease; position: relative;
         }
         .nav-links a::after {
-            content: ''; position: absolute; width: 0; height: 2px; /* Slightly thicker underline */
-            display: block; margin-top: 5px; right: 0; background: var(--accent-color); /* Using accent for hover */
-            transition: width 0.3s ease, background-color 0.3s ease;
+            content: ''; position: absolute; width: 0; height: 1.5px; 
+            display: block; margin-top: 4px; right: 0; background: var(--accent-color); 
+            transition: width 0.3s ease;
         }
-        .nav-links a:hover { color: var(--accent-color); }
-        .nav-links a:hover::after { width: 100%; left: 0; background: var(--accent-color); }
+        .nav-links a:hover { color: var(--text-dark); } /* Darker text on hover */
+        .nav-links a:hover::after { width: 100%; left: 0; }
 
         .mobile-menu { display: none; cursor: pointer; }
         .mobile-menu span {
@@ -84,101 +82,98 @@
         }
 
         .hero {
-            min-height: 85vh; /* Slightly increased height */
+            min-height: 80vh; 
             display: flex; align-items: center; justify-content: center;
-            text-align: center; padding: 160px 0 90px; /* Adjusted padding */
+            text-align: center; padding: 150px 0 80px; 
             position: relative; background-color: var(--primary-bg);
         }
         .hero-content {
-            max-width: 780px; opacity: 0; transform: translateY(30px);
+            max-width: 750px; opacity: 0; transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.3s forwards;
         }
         .hero h1 {
-            font-family: var(--font-heading); font-size: 3.2rem; /* Slightly larger */
-            color: var(--text-dark); margin-bottom: 1.8rem; line-height: 1.25; font-weight: 600;
+            font-family: var(--font-heading); font-size: 3rem; 
+            color: var(--text-dark); margin-bottom: 1.5rem; line-height: 1.2; font-weight: 600;
         }
         .hero p {
-            font-size: 1.2rem; color: var(--text-light); margin-bottom: 3rem; /* Increased bottom margin */
-            max-width: 620px; margin-left: auto; margin-right: auto; font-weight: 300;
+            font-size: 1.15rem; color: var(--text-light); margin-bottom: 2.5rem; 
+            max-width: 600px; margin-left: auto; margin-right: auto; font-weight: 300;
         }
         .btn {
-            padding: 15px 40px; /* Slightly larger padding */
+            padding: 14px 35px; 
             border: 1px solid var(--text-dark); border-radius: 50px;
-            font-size: 0.95rem; font-weight: 500; text-decoration: none; display: inline-block;
-            transition: all 0.3s ease; cursor: pointer; letter-spacing: 0.8px; /* Increased letter spacing */
-            text-transform: uppercase;
+            font-size: 0.9rem; font-weight: 500; text-decoration: none; display: inline-block;
+            transition: all 0.3s ease; cursor: pointer; letter-spacing: 0.5px; text-transform: uppercase;
         }
         .btn-primary { background: var(--text-dark); color: var(--primary-bg); }
         .btn-primary:hover {
             background: var(--accent-color); border-color: var(--accent-color);
-            color: var(--primary-bg); transform: translateY(-3px) scale(1.02); /* Enhanced hover */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            color: var(--text-dark); transform: translateY(-2px);
         }
         
-        .services { padding: 100px 0; background-color: #f8f9fa; } /* Slightly different off-white */
+        .services { padding: 90px 0; background-color: var(--secondary-bg); } /* Using secondary bg */
         .section-title {
-            text-align: center; margin-bottom: 70px; /* Increased margin */
+            text-align: center; margin-bottom: 60px; 
             opacity: 0; transform: translateY(20px);
         }
         .section-title.visible { animation: fadeInUp 0.7s ease forwards; }
         .section-title h2 {
-            font-family: var(--font-heading); font-size: 2.6rem; color: var(--text-dark);
-            margin-bottom: 1.2rem; font-weight: 600;
+            font-family: var(--font-heading); font-size: 2.4rem; color: var(--text-dark);
+            margin-bottom: 1rem; font-weight: 600;
         }
         .section-title p {
-            font-size: 1.15rem; color: var(--text-light); max-width: 650px; /* Slightly wider */
+            font-size: 1.1rem; color: var(--text-light); max-width: 600px; 
             margin: 0 auto; font-weight: 300;
         }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; } /* Increased gap */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; } 
         .service-card {
-            background: var(--primary-bg); padding: 3rem 2.5rem; /* Increased padding */
+            background: var(--primary-bg); padding: 2.5rem 2rem; 
             border: 1px solid var(--border-color);
-            border-radius: 10px; /* Slightly larger radius */
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            border-radius: 8px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: left; opacity: 0; transform: translateY(20px);
             display: flex; flex-direction: column;
         }
         .service-card.visible { animation: fadeInUp 0.5s ease forwards; }
-        .service-card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); } /* Enhanced hover */
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.07); } 
         .service-card h3 {
-            font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-dark);
-            margin-bottom: 1.2rem; font-weight: 600; margin-top: 0;
+            font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-dark);
+            margin-bottom: 1rem; font-weight: 600; margin-top: 0;
         }
-        .service-card p { color: var(--text-light); line-height: 1.75; font-size: 0.98rem; font-weight: 300; }
+        .service-card p { color: var(--text-light); line-height: 1.7; font-size: 0.95rem; font-weight: 300; }
 
-        .contact { padding: 100px 0; background-color: var(--primary-bg); }
+        .contact { padding: 90px 0; background-color: var(--primary-bg); }
         .contact-details-container {
-            background: #f8f9fa; /* Consistent with services background */
-            padding: 3rem; border: 1px solid var(--border-color);
-            border-radius: 10px; opacity: 0; transform: translateY(20px);
-            max-width: 700px; margin: 0 auto;
+            background: var(--secondary-bg); /* Consistent off-white background */
+            padding: 2.5rem; border: 1px solid var(--border-color);
+            border-radius: 8px; opacity: 0; transform: translateY(20px);
+            max-width: 650px; margin: 0 auto;
         }
         .contact-details-container.visible { animation: fadeInUp 0.7s ease forwards; }
         .contact-details-container h3 {
-            font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-dark);
-            margin-bottom: 2rem; text-align: center; font-weight: 600;
+            font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-dark);
+            margin-bottom: 1.5rem; text-align: center; font-weight: 600;
         }
         .contact-details-container p {
-            font-size: 1.1rem; color: var(--text-dark); line-height: 1.9;
-            margin-bottom: 1rem; text-align: center;
+            font-size: 1.05rem; color: var(--text-dark); line-height: 1.8;
+            margin-bottom: 0.8rem; text-align: center;
         }
         .contact-details-container p strong { font-weight: 500; color: var(--text-dark); }
-        .contact-details-container a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
-        .contact-details-container a:hover { text-decoration: underline; opacity: 0.8; }
+        .contact-details-container a { color: var(--accent-color); text-decoration: none; font-weight: 500;}
+        .contact-details-container a:hover { text-decoration: underline; }
 
         footer {
-            background: var(--text-dark); /* Darker footer */
-            color: #a0a0a0; /* Lighter text on dark background */
-            padding: 60px 0 40px; /* Adjusted padding */
-            text-align: center; font-size: 0.9rem;
+            background: var(--secondary-bg); /* Light footer */
+            color: var(--text-light); padding: 50px 0;
+            text-align: center; font-size: 0.9rem; border-top: 1px solid var(--border-color);
         }
-        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
         .social-links { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
         .social-links a {
-            color: #a0a0a0; text-decoration: none; font-size: 1rem;
-            transition: color 0.3s ease; letter-spacing: 0.5px; font-weight: 500;
+            color: var(--text-light); text-decoration: none; font-size: 0.9rem; /* Slightly smaller text for link */
+            transition: color 0.3s ease; letter-spacing: 0.5px;
         }
-        .social-links a:hover { color: var(--primary-bg); } /* White hover on dark background */
+        .social-links a:hover { color: var(--accent-color); }
 
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
@@ -193,23 +188,23 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none; flex-direction: column; position: absolute;
-                top: 65px; /* Adjusted based on header padding */
+                top: 68px; /* Adjusted based on header padding */
                 left: 0; right: 0; background: var(--primary-bg);
-                padding: 1.5rem 0; box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-                text-align: center; gap: 1.2rem;
+                padding: 1rem 0; box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                text-align: center; gap: 1rem;
             }
             .nav-links.active { display: flex; }
             .mobile-menu { display: block; }
             .mobile-menu.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
             .mobile-menu.active span:nth-child(2) { opacity: 0; }
             .mobile-menu.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-            .hero h1 { font-size: 2.3rem; }
-            .hero p { font-size: 1.05rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1rem; }
             .section-title h2 { font-size: 2rem; }
             .section-title p { font-size: 1rem; }
-            .services-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .services-grid { grid-template-columns: 1fr; }
             .service-card { padding: 2rem 1.5rem; }
-            .contact-details-container { padding: 2.5rem 1.5rem; }
+            .contact-details-container { padding: 2rem 1.5rem; }
         }
     </style>
 </head>
@@ -218,13 +213,13 @@
         <div class="container">
             <nav>
                 <a href="#home" class="logo">
-                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo - Eksperci Transformacji Agile w Polsce" class="logo-img"> {/* UPDATED LOGO & Alt text */}
+                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo - Experts in Agile Transformation in Warsaw" class="logo-img"> 
                     Agile Poland
                 </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Usługi</a></li> {/* Polish: Services */}
-                    <li><a href="#contact">Kontakt</a></li> {/* Polish: Contact */}
+                    <li><a href="#services">Services</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
                 </ul>
                 <div class="mobile-menu">
                     <span></span>
@@ -238,9 +233,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Wzmacniamy Twoją Organizację dzięki Agile</h1> {/* Polish Hero Title */}
-                <p>Jesteśmy Agile Poland, firmą konsultingową wspierającą organizacje w osiąganiu najwyższej efektywności poprzez sprawdzone metodyki Agile. Zbudujmy razem lepszą przyszłość dla Twojej firmy.</p> {/* Polish Hero Subtitle */}
-                <a href="#contact" class="btn btn-primary">Rozpocznij Współpracę</a> {/* Polish Button */}
+                <h1>Empowering Your Organization with Agile</h1> 
+                <p>We are Agile Poland, a dedicated consulting firm helping organizations achieve peak efficiency through proven Agile methodologies. Let's build a better future for your organization.</p> 
+                <a href="#contact" class="btn btn-primary">Get Started</a> 
             </div>
         </div>
     </section>
@@ -248,21 +243,21 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>Nasze Usługi Agile</h2> {/* Polish Section Title */}
-                <p>Dopasowane rozwiązania Agile, w tym eksperckie talenty i konsulting, aby sprostać unikalnym potrzebom Twojej organizacji i wspierać zrównoważony rozwój w Polsce.</p> {/* Polish Section Subtitle */}
+                <h2>Our Agile Services</h2> 
+                <p>Tailored Agile solutions including expert talent and consulting to meet your unique organizational needs and drive sustainable growth in Poland.</p> 
             </div>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
-                    <h3>Talenty Agile</h3> {/* Polish Service Title */}
-                    <p>Uzyskaj dostęp do naszej starannie wyselekcjonowanej sieci czołowych Scrum Masterów i Agile Coachów w Polsce. Łączymy Twoją firmę z najlepszymi ekspertami w branży, aby napędzać sukces Twoich projektów agile.</p> {/* Polish Service Description */}
+                    <h3>Agile Talents</h3> 
+                    <p>Access our curated network of Poland's leading Scrum Masters and Agile Coaches. We connect your company with the industry's best experts to drive your agile success.</p> 
                 </div>
                 <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
-                    <h3>Konsulting Agile</h3> {/* Polish Service Title */}
-                    <p>Dogłębna analiza obecnych procesów w celu identyfikacji wąskich gardeł i obszarów do usprawnienia Agile, zapewniając zgodność z celami biznesowymi Twojej organizacji.</p> {/* Polish Service Description */}
+                    <h3>Agile Consulting</h3> 
+                    <p>In-depth analysis of your existing workflows to identify bottlenecks and areas for Agile improvement, ensuring alignment with business objectives.</p> 
                 </div>
                 <div class="service-card animate-on-scroll" style="animation-delay: 0.4s;">
-                    <h3>Warsztaty Agile</h3> {/* Polish Service Title */}
-                    <p>Interaktywne i praktyczne szkolenia zaprojektowane, aby wyposażyć Twoje zespoły w umiejętności i sposób myślenia niezbędne do efektywnego działania w środowisku Agile.</p> {/* Polish Service Description */}
+                    <h3>Agile Workshops</h3> 
+                    <p>Interactive and practical training sessions designed to equip your teams with the skills and mindset needed to thrive in an Agile environment.</p> 
                 </div>
             </div>
         </div>
@@ -271,14 +266,13 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>Skontaktuj się z Agile Poland</h2> {/* Polish Section Title */}
-                <p>Gotowy, aby rozpocząć swoją podróż Agile lub masz pytania? Skontaktuj się z nami, aby omówić, jak możemy pomóc Twojej organizacji w Warszawie lub całej Polsce.</p> {/* Polish Section Subtitle */}
+                <h2>Connect With Agile Poland</h2> 
+                <p>Ready to start your Agile journey or have questions? Reach out and let's discuss how we can help your Warsaw-based or Polish organization.</p> 
             </div>
             <div class="contact-details-container animate-on-scroll"> 
-                <h3>Nasze Dane Kontaktowe</h3> {/* Polish Subheading */}
-                <p><strong>Adres:</strong> Krasińskiego 33, 01-784 Warszawa, Polska</p> {/* Added postal code, to be verified by user */}
-                <p><strong>Email:</strong> <a href="mailto:info@agilepoland.pl">info@agilepoland.pl</a></p>
-                <p><strong>Telefon:</strong> <a href="tel:+48503659944">+48 503 659 944</a></p>
+                <h3>Our Contact Details</h3> 
+                <p><strong>Address:</strong> Krasinskiego 33, 01-784 Warsaw, Poland</p> <p><strong>Email:</strong> <a href="mailto:info@agilepoland.pl">info@agilepoland.pl</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+48503659944">+48 503 659 944</a></p>
             </div>
         </div>
     </section>
@@ -286,9 +280,9 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; <span id="currentYear"></span> Agile Poland. Wszelkie prawa zastrzeżone. Konsulting Agile Warszawa.</p> {/* Polish Copyright */}
+                <p>&copy; <span id="currentYear"></span> Agile Poland. All rights reserved. Agile Consulting Warsaw.</p> 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/company/agile-poland" aria-label="Agile Poland na LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/agile-poland" aria-label="Agile Poland on LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -332,38 +326,38 @@
             "@type": "Organization",
             "name": "Agile Poland",
             "url": "https://agilepoland.pl",
-            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", // UPDATED LOGO PATH
-            "description": "Agile Poland dostarcza ekspercki konsulting Agile, dostęp do najlepszych Talentów Agile (Scrum Masterów, Agile Coachów) oraz transformacyjne warsztaty dla organizacji w Warszawie i całej Polsce.", // Polish
+            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", // ENSURE THIS PATH IS CORRECT
+            "description": "Agile Poland provides expert Agile consulting, access to top Agile Talents (Scrum Masters, Agile Coaches), and transformative workshops for organizations in Warsaw and across Poland.", 
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Krasińskiego 33",
-                "addressLocality": "Warszawa", // Polish
+                "streetAddress": "Krasinskiego 33",
+                "addressLocality": "Warsaw", 
                 "addressCountry": "PL",
                 "postalCode": "01-784" // PLEASE VERIFY THIS POSTAL CODE
             },
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+48-503-65-99-44", 
-                "contactType": "customer support", // Can also be "sales", "technical support" etc.
+                "contactType": "customer support", 
                 "email": "info@agilepoland.pl", 
-                "areaServed": "PL", // ISO 3166-1 alpha-2 country code for Poland
-                "availableLanguage": ["Polish", "English"] // Polish first
+                "areaServed": "PL", 
+                "availableLanguage": ["English", "Polish"] 
             },
             "sameAs": [
                 "https://www.linkedin.com/company/agile-poland"
             ],
-            "knowsAbout": [
-                "Metodyki Agile", "Scrum", "Kanban", "Coaching Agile", "Transformacja Agile",
-                "Optymalizacja Procesów", "Warsztaty Agile", "Rekrutacja Scrum Masterów", "Rekrutacja Agile Coachów"
-            ], // Polish Keywords
+            "knowsAbout": [ // English Keywords
+                "Agile Methodologies", "Scrum", "Kanban", "Agile Coaching", "Agile Transformation",
+                "Process Optimization", "Agile Workshops", "Scrum Master Recruitment", "Agile Coach Recruitment"
+            ], 
             "foundingDate": "YYYY-MM-DD", // PLEASE UPDATE with actual founding date
             "location": {
                 "@type": "Place",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Krasińskiego 33",
-                    "addressLocality": "Warszawa",
-                    "addressRegion": "Mazowieckie", // Masovian Voivodeship in Polish
+                    "streetAddress": "Krasinskiego 33",
+                    "addressLocality": "Warsaw",
+                    "addressRegion": "Masovian Voivodeship", 
                     "postalCode": "01-784", // PLEASE VERIFY
                     "addressCountry": "PL"
                 }
@@ -383,7 +377,7 @@
                 },
                 "query-input": "required name=search_term_string"
             },
-            "inLanguage": "pl-PL" // Added website language
+            "inLanguage": "en-US" 
         };
 
         const scriptLDJSONOrg = document.createElement('script');
