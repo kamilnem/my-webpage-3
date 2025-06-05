@@ -13,19 +13,22 @@
     <meta property="og:description" content="Discover how Agile Poland can enhance your organization's efficiency with expert Agile Talents, consulting, and workshops. Based in Warsaw.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agilepoland.pl">
-    <meta property="og:image" content="https://agilepoland.pl/agile-poland-logo-nowe.jpg"> <meta property="og:site_name" content="Agile Poland">
+    <meta property="og:image" content="https://agilepoland.pl/agile-poland-logo-nowe.jpg">
+    <meta property="og:site_name" content="Agile Poland">
     <meta property="og:locale" content="en_US">
 
 
-    <link rel="icon" href="./agile-poland-logo-nowe.jpg"> <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./agile-poland-logo-nowe.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --primary-bg: #FFFFFF;
-            --secondary-bg: #f8f9fa; /* Light grey for alternate sections */
+            --secondary-bg: #f8f9fa; 
             --text-dark: #1a1a1a; 
             --text-light: #555555; 
-            --accent-color: #c0b283; /* Subtle gold/beige accent */
+            --accent-color: #c0b283; 
             --border-color: #e0e0e0; 
             --font-heading: 'Lora', serif;
             --font-body: 'Montserrat', sans-serif;
@@ -48,19 +51,17 @@
             backdrop-filter: blur(10px); 
             box-shadow: 0 1px 5px rgba(0,0,0,0.07); 
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            padding: 15px 0; 
+            padding: 10px 0; /* Adjusted padding for potentially larger logo */
         }
         nav { display: flex; justify-content: space-between; align-items: center; }
         .logo {
             display: flex; align-items: center; text-decoration: none;
-            color: var(--text-dark); font-family: var(--font-heading);
-            font-weight: 600; font-size: 1.5rem; 
         }
         .logo-img {
-            height: 38px; 
+            height: 50px; /* Increased logo height */
             width: auto;
-            margin-right: 10px; 
             vertical-align: middle; 
+            /* margin-right was removed as text is gone */
         }
         .nav-links { display: flex; list-style: none; gap: 2.5rem; } 
         .nav-links a {
@@ -85,6 +86,7 @@
             min-height: 80vh; 
             display: flex; align-items: center; justify-content: center;
             text-align: center; padding: 150px 0 80px; 
+            margin-top: 70px; /* Added margin to account for fixed header height if logo is taller */
             position: relative; background-color: var(--primary-bg);
         }
         .hero-content {
@@ -188,7 +190,8 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none; flex-direction: column; position: absolute;
-                top: 68px; 
+                /* Adjusted top based on header padding and new logo height potentially affecting header overall height */
+                top: calc(50px + 2 * 10px); /* logo height + top/bottom padding of header */
                 left: 0; right: 0; background: var(--primary-bg);
                 padding: 1rem 0; box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 text-align: center; gap: 1rem;
@@ -213,8 +216,7 @@
         <div class="container">
             <nav>
                 <a href="#home" class="logo">
-                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo - Experts in Agile Transformation in Warsaw" class="logo-img">  Agile Poland
-                </a>
+                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo" class="logo-img"> </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li> 
@@ -270,7 +272,8 @@
             </div>
             <div class="contact-details-container animate-on-scroll"> 
                 <h3>Our Contact Details</h3> 
-                <p><strong>Address:</strong> Krasinskiego 33, 01-784 Warsaw, Poland</p> <p><strong>Email:</strong> <a href="mailto:info@agilepoland.pl">info@agilepoland.pl</a></p>
+                <p><strong>Address:</strong> Krasinskiego 33, 01-784 Warsaw, Poland</p>
+                <p><strong>Email:</strong> <a href="mailto:info@agilepoland.pl">info@agilepoland.pl</a></p>
                 <p><strong>Phone:</strong> <a href="tel:+48503659944">+48 503 659 944</a></p>
             </div>
         </div>
@@ -325,14 +328,14 @@
             "@type": "Organization",
             "name": "Agile Poland",
             "url": "https://agilepoland.pl",
-            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", // UPDATED FILENAME
+            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", 
             "description": "Agile Poland provides expert Agile consulting, access to top Agile Talents (Scrum Masters, Agile Coaches), and transformative workshops for organizations in Warsaw and across Poland.", 
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Krasinskiego 33",
                 "addressLocality": "Warsaw", 
                 "addressCountry": "PL",
-                "postalCode": "01-784" // PLEASE VERIFY THIS POSTAL CODE
+                "postalCode": "01-784" 
             },
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -349,7 +352,7 @@
                 "Agile Methodologies", "Scrum", "Kanban", "Agile Coaching", "Agile Transformation",
                 "Process Optimization", "Agile Workshops", "Scrum Master Recruitment", "Agile Coach Recruitment"
             ], 
-            "foundingDate": "YYYY-MM-DD", // PLEASE UPDATE with actual founding date
+            "foundingDate": "YYYY-MM-DD", 
             "location": {
                 "@type": "Place",
                 "address": {
@@ -357,7 +360,7 @@
                     "streetAddress": "Krasinskiego 33",
                     "addressLocality": "Warsaw",
                     "addressRegion": "Masovian Voivodeship", 
-                    "postalCode": "01-784", // PLEASE VERIFY
+                    "postalCode": "01-784", 
                     "addressCountry": "PL"
                 }
             }
