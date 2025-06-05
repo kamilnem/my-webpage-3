@@ -46,9 +46,9 @@
             position: fixed; width: 100%; top: 0; z-index: 1000;
             background: rgba(255, 255, 255, 0.97); 
             backdrop-filter: blur(10px); 
-            box-shadow: 0 1px 5px rgba(0,0,0,0.07); /* Softer, more subtle shadow */
+            box-shadow: 0 1px 5px rgba(0,0,0,0.07); 
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            padding: 15px 0; /* Balanced padding */
+            padding: 15px 0; 
         }
         nav { display: flex; justify-content: space-between; align-items: center; }
         .logo {
@@ -57,10 +57,10 @@
             font-weight: 600; font-size: 1.5rem; 
         }
         .logo-img {
-            height: 38px; /* Fine-tuned height */
+            height: 38px; 
             width: auto;
             margin-right: 10px; 
-            vertical-align: middle; /* Ensure good alignment */
+            vertical-align: middle; 
         }
         .nav-links { display: flex; list-style: none; gap: 2.5rem; } 
         .nav-links a {
@@ -72,7 +72,7 @@
             display: block; margin-top: 4px; right: 0; background: var(--accent-color); 
             transition: width 0.3s ease;
         }
-        .nav-links a:hover { color: var(--text-dark); } /* Darker text on hover */
+        .nav-links a:hover { color: var(--text-dark); } 
         .nav-links a:hover::after { width: 100%; left: 0; }
 
         .mobile-menu { display: none; cursor: pointer; }
@@ -111,7 +111,7 @@
             color: var(--text-dark); transform: translateY(-2px);
         }
         
-        .services { padding: 90px 0; background-color: var(--secondary-bg); } /* Using secondary bg */
+        .services { padding: 90px 0; background-color: var(--secondary-bg); } 
         .section-title {
             text-align: center; margin-bottom: 60px; 
             opacity: 0; transform: translateY(20px);
@@ -144,7 +144,7 @@
 
         .contact { padding: 90px 0; background-color: var(--primary-bg); }
         .contact-details-container {
-            background: var(--secondary-bg); /* Consistent off-white background */
+            background: var(--secondary-bg); 
             padding: 2.5rem; border: 1px solid var(--border-color);
             border-radius: 8px; opacity: 0; transform: translateY(20px);
             max-width: 650px; margin: 0 auto;
@@ -163,14 +163,14 @@
         .contact-details-container a:hover { text-decoration: underline; }
 
         footer {
-            background: var(--secondary-bg); /* Light footer */
+            background: var(--secondary-bg); 
             color: var(--text-light); padding: 50px 0;
             text-align: center; font-size: 0.9rem; border-top: 1px solid var(--border-color);
         }
         .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
         .social-links { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
         .social-links a {
-            color: var(--text-light); text-decoration: none; font-size: 0.9rem; /* Slightly smaller text for link */
+            color: var(--text-light); text-decoration: none; font-size: 0.9rem; 
             transition: color 0.3s ease; letter-spacing: 0.5px;
         }
         .social-links a:hover { color: var(--accent-color); }
@@ -188,7 +188,7 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none; flex-direction: column; position: absolute;
-                top: 68px; /* Adjusted based on header padding */
+                top: 68px; 
                 left: 0; right: 0; background: var(--primary-bg);
                 padding: 1rem 0; box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 text-align: center; gap: 1rem;
@@ -213,8 +213,7 @@
         <div class="container">
             <nav>
                 <a href="#home" class="logo">
-                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo - Experts in Agile Transformation in Warsaw" class="logo-img"> 
-                    Agile Poland
+                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo - Experts in Agile Transformation in Warsaw" class="logo-img">  Agile Poland
                 </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -326,7 +325,7 @@
             "@type": "Organization",
             "name": "Agile Poland",
             "url": "https://agilepoland.pl",
-            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", // ENSURE THIS PATH IS CORRECT
+            "logo": "https://agilepoland.pl/agile-poland-logo-nowe.jpg", // UPDATED FILENAME
             "description": "Agile Poland provides expert Agile consulting, access to top Agile Talents (Scrum Masters, Agile Coaches), and transformative workshops for organizations in Warsaw and across Poland.", 
             "address": {
                 "@type": "PostalAddress",
@@ -346,7 +345,7 @@
             "sameAs": [
                 "https://www.linkedin.com/company/agile-poland"
             ],
-            "knowsAbout": [ // English Keywords
+            "knowsAbout": [ 
                 "Agile Methodologies", "Scrum", "Kanban", "Agile Coaching", "Agile Transformation",
                 "Process Optimization", "Agile Workshops", "Scrum Master Recruitment", "Agile Coach Recruitment"
             ], 
