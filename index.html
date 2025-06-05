@@ -32,6 +32,7 @@
             --border-color: #e0e0e0; 
             --font-heading: 'Lora', serif;
             --font-body: 'Montserrat', sans-serif;
+            --header-height: 80px; /* Approximate header height, adjust as needed */
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -51,17 +52,19 @@
             backdrop-filter: blur(10px); 
             box-shadow: 0 1px 5px rgba(0,0,0,0.07); 
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            padding: 10px 0; /* Adjusted padding for potentially larger logo */
+            padding: 5px 0; /* Reduced padding to give more space to logo */
+            height: var(--header-height); /* Define a header height */
+            display: flex; /* Added to help vertically align nav content if needed */
+            align-items: center; /* Vertically align items within header */
         }
-        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav { display: flex; justify-content: space-between; align-items: center; width: 100%; }
         .logo {
             display: flex; align-items: center; text-decoration: none;
         }
         .logo-img {
-            height: 50px; /* Increased logo height */
+            height: 65px; /* Significantly Increased logo height */
             width: auto;
             vertical-align: middle; 
-            /* margin-right was removed as text is gone */
         }
         .nav-links { display: flex; list-style: none; gap: 2.5rem; } 
         .nav-links a {
@@ -84,14 +87,18 @@
 
         .hero {
             min-height: 80vh; 
-            display: flex; align-items: center; justify-content: center;
-            text-align: center; padding: 150px 0 80px; 
-            margin-top: 70px; /* Added margin to account for fixed header height if logo is taller */
+            display: flex; align-items: center; justify-content: center; /* This centers .hero-content horizontally */
+            text-align: center; /* This centers text within .hero-content */
+            padding: 80px 0; /* Adjusted padding */
+            margin-top: var(--header-height); /* Pushes hero down by header height */
             position: relative; background-color: var(--primary-bg);
         }
         .hero-content {
-            max-width: 750px; opacity: 0; transform: translateY(30px);
+            max-width: 750px; 
+            opacity: 0; transform: translateY(30px);
             animation: fadeInUp 0.8s ease 0.3s forwards;
+            margin-left: auto; /* Explicitly ensure centering for the block if parent doesn't fully handle */
+            margin-right: auto; /* Explicitly ensure centering for the block */
         }
         .hero h1 {
             font-family: var(--font-heading); font-size: 3rem; 
@@ -99,7 +106,8 @@
         }
         .hero p {
             font-size: 1.15rem; color: var(--text-light); margin-bottom: 2.5rem; 
-            max-width: 600px; margin-left: auto; margin-right: auto; font-weight: 300;
+            max-width: 600px; margin-left: auto; margin-right: auto; /* Centers paragraph if shorter than max-width */
+            font-weight: 300;
         }
         .btn {
             padding: 14px 35px; 
@@ -150,15 +158,14 @@
             padding: 2.5rem; border: 1px solid var(--border-color);
             border-radius: 8px; opacity: 0; transform: translateY(20px);
             max-width: 650px; margin: 0 auto;
+            text-align: center; /* Center align the p tags within */
         }
         .contact-details-container.visible { animation: fadeInUp 0.7s ease forwards; }
-        .contact-details-container h3 {
-            font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-dark);
-            margin-bottom: 1.5rem; text-align: center; font-weight: 600;
-        }
+        /* Removed h3 for "Our Contact Details" */
         .contact-details-container p {
             font-size: 1.05rem; color: var(--text-dark); line-height: 1.8;
-            margin-bottom: 0.8rem; text-align: center;
+            margin-bottom: 0.8rem; 
+            /* text-align: center; is inherited now */
         }
         .contact-details-container p strong { font-weight: 500; color: var(--text-dark); }
         .contact-details-container a { color: var(--accent-color); text-decoration: none; font-weight: 500;}
@@ -188,10 +195,15 @@
         .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
 
         @media (max-width: 768px) {
+            :root {
+                --header-height: 70px; /* Adjust header height for mobile if needed */
+            }
+            .logo-img {
+                height: 50px; /* Slightly smaller logo for mobile */
+            }
             .nav-links {
                 display: none; flex-direction: column; position: absolute;
-                /* Adjusted top based on header padding and new logo height potentially affecting header overall height */
-                top: calc(50px + 2 * 10px); /* logo height + top/bottom padding of header */
+                top: var(--header-height); 
                 left: 0; right: 0; background: var(--primary-bg);
                 padding: 1rem 0; box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 text-align: center; gap: 1rem;
@@ -216,7 +228,8 @@
         <div class="container">
             <nav>
                 <a href="#home" class="logo">
-                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo" class="logo-img"> </a>
+                    <img src="./agile-poland-logo-nowe.jpg" alt="Agile Poland Logo" class="logo-img">
+                </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li> 
@@ -271,7 +284,6 @@
                 <p>Ready to start your Agile journey or have questions? Reach out and let's discuss how we can help your Warsaw-based or Polish organization.</p> 
             </div>
             <div class="contact-details-container animate-on-scroll"> 
-                <h3>Our Contact Details</h3> 
                 <p><strong>Address:</strong> Krasinskiego 33, 01-784 Warsaw, Poland</p>
                 <p><strong>Email:</strong> <a href="mailto:info@agilepoland.pl">info@agilepoland.pl</a></p>
                 <p><strong>Phone:</strong> <a href="tel:+48503659944">+48 503 659 944</a></p>
